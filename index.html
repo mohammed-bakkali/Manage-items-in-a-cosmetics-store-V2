@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Gestion d'articles dans un magasin de vente de produits cosmétiques</h1>
+        <div class="contener">
+        <div class="Formulaire">
+        <form onsubmit="return false">
+            <h2>Product information</h2>
+            <label>His name</label>
+            <input type="text" id="nom">
+            <p id="error-1"></p>
+            <label>His brand</label>
+            <input type="text" id="brande">
+            <p id="error-2"></p>
+    
+            <label>Its price</label>
+            <input type="text" id="price">
+            <p id="error-3"></p>
+    
+            <label>Its production date</label>
+            <input type="date" id="date">
+            <p id="error-4"></p>
+    
+            <label for="type">Type:</label>
+                    <select id="Type">
+                    <option>Veuillez selectionner ...</option>
+                    <option>Hygiène et toilette</option>
+                    <option>Soins esthétiques</option>
+                    <option>Produits solaires</option>
+                    <option>Beauté des mains et des pieds</option>
+                    <option>Produits de maquillage</option>
+                    <option>Entretien capillaires</option>
+                    <option>Parfums</option>
+                    </select> 
+                    <p id="error-5"></p>
+            
+            <h4>Is on sale:</h4>
+            <div class="radio">
+            <span >Yes</span>
+            <input  type="radio" name="g" id="Yes" value="Yes">
+
+            <span>No</span>
+            <input type="radio" name="g" id="No" value="NO">
+            </div>
+            <button  type="button" id="submit" onclick="valid()"><span>create!</span><span>Read</span></button></form>
+        </div>
+        
+    </div>
+    <table>
+            <tr>
+            <th>name</th>
+            <th>brand</th>
+            <th>price</th>
+            <th>Its production date</th>
+            <th> type</th>
+            <th>Is on sale:</th>
+            </tr>
+            <tr>
+            <tbody id="tbody">
+    
+            </tbody>
+            </tr>  
+        </table>
+    <section id="prent_window">
+
+    
+    </section>
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>
